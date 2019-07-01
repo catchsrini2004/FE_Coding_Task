@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+font-size: 17px;
+background-image: url(img12.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+color: #ffffff;
+padding: 30px 40px;
+}
+
+.container {
+position: relative;
+/* max-width: 800px; */
+margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+/* .container .content {
+position: absolute;
+bottom: 0;
+background: rgb(0, 0, 0); */
+/* Fallback color */
+/* background: rgba(0, 0, 0, 0.5); */
+/* Black background with 0.5 opacity */
+/* color: #f1f1f1;
+width: 100%;
+padding: 20px;
+} */
+
+.main-content {
+width: 100%;
+display: flex;
+}
+.width-50 {
+width: 50%;
+}
+.slogan {
+margin: 15px 0 0 185px;
+}
+.form-div {
+margin: 15px;
+}
+h1 {
+width: 67%;
+font-size: 76px;
+}
+h3 {
+width: 52%;
+}
+.my-sign-up-form {
+display: grid;
+}
+input {
+background-color: transparent !important;
+height: 45px;
+width: 400px;
+}
+button {
+background-color: blue;
+height: 45px;
+width: 400px;
+color: #F0F0F0;
+}
+.width-50.form-div {
+margin-top: 29px;
+}
+
+.footer {
+display: flex;
+position: fixed;
+bottom: 0;
+}
+/* Styles for NavBar */
+.parent {display: block;position: relative;float: left;line-height: 30px;}
+.parent a{margin: 10px;color: #ffffff;text-decoration: none;}
+.parent:hover > ul {display:block;position:absolute;}
+.child {display: none;}
+.child li {background-color: #E4EFF7;line-height: 30px;border-bottom:#CCC 1px solid;border-right:#CCC 1px solid; width:100%;}
+.child li a{color: #000000;}
+ul{list-style: none;margin: 0;padding: 0px; min-width:10em;}
+ul ul ul{left: 100%;top: 0;margin-left:1px;}
+li:hover {background-color: #95B4CA;}
+.parent li:hover {background-color: #F0F0F0;}
+.expand{font-size:12px;float:right;margin-right:5px;}
+
+</style>
+
+
+</head>
+<body>
+<!--<h2>Responsive Image with Transparent Text</h2> -->
+
+
+
+<div class="container">
+<!-- <img src="img5.jpg" alt="Notebook" style="width:100%;"> -->
+
+<div class="header" style="width: 100%; display: flex; ">
+<div class="company-name" style="display: flex; width:30%; float:left; margin: 10px auto">
+<h3 style="margin: 0%">Stamp</h3>
+</div>
+<div class="navigation-menu" style="display: flex; width: 70%; float: left;">
+<ul id="menu">
+<li class="parent"><a href="#">About</a>
+<ul class="child">
+<li><a href="#">History</a></li>
+<li><a href="#">Profile</a></li>
+<li><a href="#">Domain</a></li>
+</ul>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">Integration</a>
+<ul class="child">
+<li><a href="#">System</a></li>
+<li><a href="#">Application</a></li>
+</ul>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">Pricing</a>
+<ul class="child">
+<li><a href="#">Products</a></li>
+<li><a href="#">Items</a></li>
+</ul>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">Contacts</a>
+</li>
+</ul>
+</div>
+</div>
+<div style="height: 125px;"></div>
+<div class="main-content">
+<div class="width-50 slogan">
+<h2>
+Simple Way to Organize Your Inspirations
+</h2>
+<h3>
+I think what motivates people is not great hate, but great love for other people.
+
+</h3>
+</div>
+<div id="signup" class="width-50 form-div">
+
+
+<h5>SIGN UP FOR FREE</h5>
+<form action="" class="my-sign-up-form">
+<input type="text" placeholder="Name" style="color:red">
+<input type="email" placeholder="E-mail" style="color:blue">
+<input type="password" placeholder="Password" id="" style="color:blue">
+<button type="button">Sign up ></button>
+
+</form>
+
+<h6>By clicking "Sign up" I agree to our <b>Terms of Service</b><br></h6>
+ <h3> To  <a href="#" onclick="showWindow()">Sign in</a></h3>
+
+</div>
+
+
+<div class="signin" class="width-50 form-div" id="signin" style="display : none">
+<h5>SIGN IN</h5>
+<form action="" class="my-sign-up-form">
+<input type="text" placeholder="Name"> 
+<input type="password" placeholder="Password" id="">
+<button type="button">Log in ></button>
+
+</form>
+
+ <h3> To  <a href="#" onclick="showWindow()">Sign up</a></h3>
+
+</div>
+
+
+</div>
+<div class="footer">
+<div class="company-name" style="display: flex; width:30%; float:left; margin: 10px auto">
+<h6 style="margin: 0%">&copy; 2016 Stamp. All Rights reserved</h6>
+</div>
+<div class="navigation-menu" style="display: flex; width: 70%; float: left;">
+<ul id="menu">
+<li class="parent"><a href="#">CONTACT</a>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">HELP</a>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">TERMS OF USE</a>
+</li>
+</ul>
+<ul id="menu">
+<li class="parent"><a href="#">PRIVACY POLICY</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<script>
+var flag = false;
+
+
+function showWindow(){
+
+
+		var signin = document.getElementById('signin');
+			var signup = document.getElementById('signup')
+		if(flag)
+		{
+		
+		signin.style.display = 'none';
+		signup.style.display = 'block';
+		
+			this.flag = false;
+		}
+
+		else
+		{
+			signin.style.display = 'block';
+			signup.style.display = 'none';
+			this.flag = true;
+		}
+ 
+}
+
+</script>
+
+</body>
+</html>
